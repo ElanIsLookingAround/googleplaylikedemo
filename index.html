@@ -1,0 +1,607 @@
+ <!--
+ * Created on Sat November 18 2024
+ *
+ * Written by Allen  
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Google Play-like</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet" />
+   <link href="css/myclasses.css" rel="stylesheet" />
+   <script src="js/jquery.js"></script>
+   <script src="js/functional.js" defer></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ </head>
+ 
+ <body>
+    <nav id="nav" class="d-flex container-fluid mynav align-items-center flex-wrap sticky-top px-3 pt-md-0 pt-3">
+        <div class="me-3 order-md-1 h-100 d-flex align-items-center justify-content-center text-secondary">
+            <img src="assets/logo.png" class="logo ms-2 me-3"/>
+            <h5 class="pt-sans-bold m-0 text-   ">Google Playlike</h5>
+        </div>
+        <div class="flex-grow-1 order-md-3"></div>
+        <a class=" me-3 order-md-4 text-secondary" href="#"><i class="bi bi-search nav-icon"></i></a>
+        <a class=" me-3 order-md-5 text-secondary" href="#"><i class="bi bi-question-circle nav-icon"></i></a>
+        <a href="#" class=" me-2 order-md-6"><div class="account text-center"><p class="m-auto">B</p></div></a>
+        <div class="order-md-2 h-100 w-fill d-flex align-items-center">
+            <div class="h-100 py-4 d-flex align-items-center nav-active justify-content-center text-center me-0 me-md-3 flex-fill">
+                <a class="text-secondary px-2" href="#">Games</a>
+            </div>
+            <div class="h-100 d-flex align-items-center justify-content-center text-center me-0 me-md-3 flex-fill">
+                <a class="text-secondary px-2" href="#">Apps</a>
+            </div>
+            <div class="h-100 d-flex align-items-center justify-content-center text-center me-0 me-md-3 flex-fill">
+                <a class="text-secondary px-2" href="#">Kids</a>
+            </div>
+        </div>
+    </nav>
+    
+   <div class="container mt-50p">
+
+        <div id="device" class="d-flex overflow-y-scroll mb-5 no-scrollbar fw-bold">
+            <div class="pill d-flex align-items-center justify-content-center me-3">
+                <i class="bi bi-phone ms-2 me-1"></i>
+                <p class="me-2">Phone</p>
+            </div>
+            <div class="pill-outline d-flex align-items-center justify-content-center me-3">
+                <i class="bi bi-tablet ms-2 me-1 my-1"></i>
+                <p class="me-2">Tablet</p>
+            </div>
+            <div class="pill-outline d-flex align-items-center justify-content-center me-3">
+                <i class="bi bi-tv ms-2 me-1 my-1"></i>
+                <p class="me-2">TV</p>
+            </div>
+            <div class="pill-outline d-flex align-items-center justify-content-center me-3">
+                <i class="bi bi-watch ms-2 me-1 my-1"></i>
+                <p class="me-2">Watch</p>
+            </div>
+            <div class="pill-outline d-flex align-items-center justify-content-center">
+                <i class="bi bi-laptop ms-2 me-1 my-1"></i>
+                <p class="me-2">Chromebook</p>
+            </div>
+        </div>
+
+        <div id="phone">
+            <div id="everyone" class="mb-50p">
+                <h5 class="mb-0 pb-0 fw-bold">In everyone's hands</h5>
+                <p class="mt-0"><small>Download these games</small></p>
+                <div class="d-flex scrollcontainer position-relative">
+                    <button class="position-absolute start-0 scrollbutton scrollbutton-left btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-left"></i></button>
+                    <button class="position-absolute end-0 scrollbutton scrollbutton-right btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-right"></i></button>
+                
+                    <div class="overflow-y-scroll no-scrollbar d-flex scrollbox">
+
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        
+
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+                        <a class="d-flex m-2 justify-content-start flex-column " href="#">
+                            <img src="assets/app_blank.jpg" class="app app-size-md" />
+                            <p class="ms-1">App</p>
+                            <p class="ms-1 text-secondary"><small>4.3 <i class="smallfont bi bi-star-fill"></i></small></p>
+                        </a>
+
+                    <!--  -->
+                    <!--  -->
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div id="top" class="mb-50p">
+                <h5 class="pb-0 fw-bold">Top Charts</h5>
+                <div id="device" class="d-flex flex-wrap my-4 fw-bold">
+                    <div class="pill d-flex align-items-center justify-content-center me-3">
+                        <p class="mx-3">Top free</p>
+                    </div>
+                    <div class="pill-outline d-flex align-items-center justify-content-center me-3">
+                        <p class="mx-3">Top grossing</p>
+                    </div>
+                    <div class="pill-outline d-flex align-items-center justify-content-center me-3">
+                        <p class="mx-3">Top paid</p>
+                    </div>
+                </div>
+
+                <div class="d-flex scrollcontainer chartsbox position-relative">
+                    <button class="position-absolute start-0 scrollbutton scrollbutton-left btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-left"></i></button>
+                    <button class="position-absolute end-0 scrollbutton scrollbutton-right btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-right"></i></button>
+                
+                    <div class="overflow-y-scroll no-scrollbar d-flex scrollbox">
+
+                        <div class="d-flex flex-column">
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">1</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">2</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">3</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+                        
+
+                        <div class="d-flex flex-column">
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">4</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">5</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">6</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">7</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">8</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">9</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">4</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">5</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                            <a class="d-flex align-items-center mb-1 charts" href="#">
+                                <p class="m-1">6</p>
+                                <img src="assets/app_blank.jpg" class="m-1 app app-size-sm bg-primary"/>
+                                <div class="m-1 d-flex flex-column">
+                                    <p class="m-0 p-0">Title</p>
+                                    <small class="text-secondary">genre • genre • genre</small>
+                                    <p class="text-secondary">4.5 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+                        <!--  -->
+
+                        
+                    </div>    
+                </div>
+            </div>
+
+            <div id="popular" class="mb-50p">
+                <h5 class="mb-0 pb-0 fw-bold">Popular Games</h5>
+
+                <div class="d-flex mt-4 no-scrollbar position-relative scrollcontainer" style="height: 300px;">
+                    <button class="position-absolute start-0 scrollbutton scrollbutton-left btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-left"></i></button>
+                    <button class="position-absolute end-0 scrollbutton scrollbutton-right btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-right"></i></button>
+                
+                    <div class="overflow-y-scroll no-scrollbar d-flex scrollbox">
+                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--  -->
+                        <!--  -->
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div id="simulator" class="mb-50p">
+                <h5 class="mb-0 pb-0 fw-bold">Simulator Games</h5>
+
+                <div class="d-flex mt-4 no-scrollbar position-relative scrollcontainer" style="height: 300px;">
+                    <button class="position-absolute start-0 scrollbutton scrollbutton-left btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-left"></i></button>
+                    <button class="position-absolute end-0 scrollbutton scrollbutton-right btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-right"></i></button>
+                
+                    <div class="overflow-y-scroll no-scrollbar d-flex scrollbox">
+                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--  -->
+                        <!--  -->
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div id="fps" class="mb-50p">
+                <h5 class="mb-0 pb-0 fw-bold">FPS Games</h5>
+
+                <div class="d-flex mt-4 no-scrollbar position-relative scrollcontainer" style="height: 300px;">
+                    <button class="position-absolute start-0 scrollbutton scrollbutton-left btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-left"></i></button>
+                    <button class="position-absolute end-0 scrollbutton scrollbutton-right btn btn-light d-flex justify-content-center align-items-center"><i class="bi bi-chevron-right"></i></button>
+                
+                    <div class="overflow-y-scroll no-scrollbar d-flex scrollbox">
+                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>                        
+                        <div class="d-flex flex-column m-2">
+                            <div class="d-flex position-relative mb-3" style="width: 350px;">
+                                <img src="assets/app_blank.jpg" class="banner-size app"/>
+                                <button class="position-absolute top-50 start-50 translate-middle playbutton btn btn-dark d-flex justify-content-center align-items-center"><i class="bi bi-play-fill"></i></button>
+                            </div>
+                            <a class="d-flex" href="#">
+                                <img src="assets/app_blank.jpg" class="app-size-sm app"/>
+                                <div class="d-flex flex-column ms-2">
+                                    <p>Title</p>
+                                    <small class="text-secondary">genre  • genre</small>
+                                    <p class="text-secondary">4.3 <i class="smallfont bi bi-star-fill"></i></p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--  -->
+                        <!--  -->
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        <!--  -->
+        </div>
+
+        <div id="footer" class="mt-50p pb-20p text-secondary">
+            <hr style="color: lighgrey;"/>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <ul class="cleanlist">
+                        <p class="mb-5p">Google Playlike</p>
+                        <li><a class=" mb-5p" href="#">Not-Play Pass</a></li>
+                        <li><a class=" mb-5p" href="#">Not-Play Pass</a></li>
+                        <li><a class=" mb-5p" href="#">Not-Play Pass</a></li>
+                        <li><a class=" mb-5p" href="#">Not-Play Pass</a></li>
+                        <li><a class=" mb-5p" href="#">Not-Play Pass</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul class="cleanlist">
+                        <p class="mb-5p">Family</p>
+                        <li><a class=" mb-5p" href="#">Not-Play Pass</a></li>
+                        <li><a class=" mb-5p" href="#">Not-Play Pass</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-md-evenly flex-wrap greytext">
+                <small class="me-4 p-2 grey"><a href="#" class="">Terms of Service</a></small>
+                <small class="me-4 p-2"><a href="#" class="">Privacy</a></small>
+                <small class="me-4 p-2"><a href="#" class="">About Not-Google Play</a></small>
+                <small class="me-4 p-2"><a href="#" class="">Developers</a></small>
+                <small class="me-4 p-2"><a href="#" class="">Googlestore</a></small>
+                <small class="flex-md-grow-1 p-2 text-start text-md-end">English</small>
+            </div>
+        </div>
+
+   </div>
+    
+ 
+ </body>
+ 
+ 
+ </html>

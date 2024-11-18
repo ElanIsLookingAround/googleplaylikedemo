@@ -1,0 +1,215 @@
+/*
+ * Created on Sat November 18 2024
+ *
+ * Written by Allen  
+ */
+ body{
+    font-family: "PT Sans", sans-serif;;
+ }
+.app{
+    border-radius: 15px;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.pill-radius{
+    border-radius: 18px;
+}
+
+.app-size-sm{
+    height: 64px;
+    width: 64px;
+}
+
+.nav-active{
+    margin-top: 3px;
+    border-bottom: 3px solid rgb(72, 180, 223);
+}
+.nav-icon{
+    font-size: 20px;
+}
+nav{
+    background: white;
+}
+.pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.account{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rebeccapurple;
+    border: solid 1px rebeccapurple;
+    color: white;
+}
+.account:hover{
+    color: rebeccapurple;
+    background-color: white;
+}
+
+.boxshadow{
+    box-shadow: 0px 0px 10px rgba(163, 163, 163, 0.8);
+}
+
+.pill{
+    border: solid 1px #f7c8de;
+    border: none;
+    background: #f7c8de;
+    color: #df59ac;
+    height: 32px;
+    border-radius: 18px;
+}
+.pill-outline{
+    border: solid 1px lightgrey;
+    background: white;
+    color: rgb(71, 71, 71);
+    height: 32px;
+    border-radius: 18px;
+    transition: 0.2s;
+}
+.smallfont{
+    font-size: 12px;
+}
+.pill-outline:hover{
+    border-color: lightgrey;
+    background: lightgrey;
+}
+.clickable{
+    min-height: 60px;
+}
+.charts{
+    height: 85px;
+    width: 370px;
+    border-radius: 12px;
+    transition: 0.2s all;
+}
+.charts:hover{
+    background: rgb(238, 238, 238);
+}
+.chartsbox{
+    height: 260px;
+}
+
+.app-size-md{
+    height: 180px;
+    width: 180px;
+}
+
+
+.banner-size{
+    width: 350px;
+    height: 200px;
+}
+
+.scrollcontainer:hover .scrollbutton, .scrollcontainer:hover .scrollbuttonseries{
+    opacity: 1;
+}
+
+.scrollbutton, .playbutton{
+    transition: 0.3s all;
+    top: 40%;
+    text-align: center;
+    border-radius: 100%;
+    padding: 0px;
+    font-weight: 600;
+    z-index: 10000;
+}
+
+.btn-light{
+    box-shadow: 0px 0px 3px rgb(143, 143, 143);
+}
+.scrollbutton{
+    opacity: 0;
+    height: 40px;
+    width: 40px;
+    z-index: 10001;
+}
+.playbutton{
+    height: 50px;
+    width: 50px;
+}
+
+p, a{
+    margin: 0px!important;
+    padding: 0px!important;
+}
+
+.no-scrollbar{
+    scrollbar-width: none;
+}
+
+.m-50p{
+    margin: 50px!important;
+}
+
+.mt-50p{
+    margin-top: 50px!important;
+}
+
+.mb-50p{
+    margin-bottom: 50px!important;
+}
+
+.mb-5p{
+    margin-bottom: 5px!important;
+}
+
+.pb-20p{
+    padding-bottom: 20px;
+}
+
+.cleanlist{
+    list-style: none;
+    padding-left: 5px!important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.cleanlist li a{
+    color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity)) !important;
+    text-decoration: none;
+}
+.greytext, .greytext small, .greytext small a{
+    color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity)) !important;
+}
+
+
+.mynav{
+    transition: 0.3s all;
+    z-index: 2000000;
+}
+
+.order-md-6{
+    order: 6;
+}
+.order-md-7{
+    order: 7;
+}
+.order-md-8{
+    order: 8;
+}
+.w-fill{
+    width: auto;
+}
+@media screen and (max-width: 768px) {
+    .order-md-6{
+        order: initial;
+    }
+    .order-md-7{
+        order: initial;
+    }
+    .order-md-8{
+        order: initial;
+    }
+    .w-fill{
+        width: 100%;
+    }
+    .app-size-sm{
+        height: 54px;
+        width: 54px;
+    }
+ }
